@@ -36,7 +36,6 @@
           <li><a href="#Testimonials">TESTIMONIALS</a></li>
           <li><a href="#Contact">CONTACT</a></li>
         </ul>
-        <button>Book Class</button>
       </div>
     </nav>
 
@@ -51,7 +50,7 @@
           </p>
           <button>Enroll Now</button>
 
-          <div>
+          <!-- <div>
             <div class="home-testimonial">
               <img src="images/chef.jpg" class="home-testimonial-img" alt="" />
               <div>
@@ -63,13 +62,13 @@
               After joining their baking workshop, My pastry skills have
               noticeably imporoved! The classes were fun and informative
             </p>
-          </div>
+          </div> -->
         </div>
         <img src="images/mainpage (2).jpg" class="home-img" alt="" />
       </div>
     </section>
 
-    <section id="About-chef">
+    <!-- <section id="About-chef">
       <div class="container About-flex">
         <div class="about-img">
           <img
@@ -90,11 +89,11 @@
           </p>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <section id="Feature">
       <div class="feature-1">
-        <div class="feature">
+        <div class="feature" id="feature-top">
           <img src="images/Feature-2.jpg" alt="" />
           <div>
             <h2>Advanced Decorating Techniques</h2>
@@ -118,7 +117,7 @@
     </section>
 
     <section id="Guests">
-      <h2 class="container">GUESTS</h2>
+      <!-- <h2 class="container">GUESTS</h2> -->
       <div class="guest2-bkg">
         <div class="guest1 container">
           <img
@@ -160,7 +159,7 @@
 
     <section id="Schedule">
       <div class="container">
-        <h2>SCHEDULE</h2>
+        <h2 class="schedule-h2">SCHEDULE</h2>
         <div class="schedule-1">
           <img
             src="https://images.unsplash.com/photo-1586985289688-ca3cf47d3e6e?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -183,7 +182,7 @@
             </ul>
           </div>
         </div>
-        <div class="schedule-1">
+        <div class="schedule-1" id="schedule-1">
           <div class="schedule-information">
             <h2>Location <span>- Mumbai</span></h2>
             <h2>Date <span>- 21 March</span></h2>
@@ -204,6 +203,24 @@
             src="https://images.unsplash.com/photo-1516054575922-f0b8eeadec1a?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt=""
           />
+        </div>
+        <!-- <div class="grid">
+          <div class="box1 grid-col-span-2">
+            <img
+              src="https://images.unsplash.com/photo-1499889808931-317a0255c0e9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8YmFraW5nJTIwY2FrZXxlbnwwfHwwfHx8MA%3D%3D"
+              alt=""
+            />
+             
+          </div> -->
+          <!-- <div class="box1"></div> -->
+          <!-- <div class="box4 grid-col-span-2">
+            <img
+              src="https://images.unsplash.com/photo-1499889808931-317a0255c0e9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8YmFraW5nJTIwY2FrZXxlbnwwfHwwfHx8MA%3D%3D"
+              alt=""
+            />
+          </div> -->
+          <!-- <div class="box4"></div> -->
+          <!-- <div class="box5"></div> -->
         </div>
       </div>
     </section>
@@ -274,61 +291,43 @@
             <input type="text" />
             <p>Message</p>
             <textarea name="" id="" cols="30" rows="10"></textarea>
+            <button>Send</button>
           </form>
         </div>
       </div>
     </section>
 
-    <footer id="footer" class="container">
-      <img src="images/logo.png" alt="" />
-      <div class="footer-menu">
-        <ul>
-          <li><a href="#Nav">HOME</a></li>
-          <li><a href="#About-chef">ABOUT</a></li>
-          <li><a href="#Feature">FEATURE</a></li>
-          <li><a href="#Guests">GUESTS</a></li>
-        </ul>
-        <ul>
-          <li><a href="#Schedule">SCHEDULE</a></li>
-          <li><a href="#Testimonials">TESTIMONIALS</a></li>
-          <li><a href="#Contact">CONTACT</a></li>
-        </ul>
-      </div>
-      <div class="location">
-        <h2>OUR LOCATION</h2>
-        <p>
-          Unit #103 - 2636 Montrose Ave. <br />
-          Abbotsford, BC <br />
-          V2S 3T6
-        </p>
-        <div class="advertisement">
-          <p>Baking.artistry@gmail.com</p>
-          <a href=""><i class="fa-brands fa-instagram"></i></a>
-          <a href=""><i class="fa-brands fa-twitter"></i></a>
-          <a href=""><i class="fa-brands fa-facebook"></i></a>
+    <footer id="footer">
+      <div class="container footer-body">
+        <img src="images/logo.png" alt="" />
+        <div class="footer-menu">
+          <ul>
+            <li><a href="#Nav">HOME</a></li>
+            <li><a href="#About-chef">ABOUT</a></li>
+            <li><a href="#Feature">FEATURE</a></li>
+            <li><a href="#Guests">GUESTS</a></li>
+          </ul>
+          <ul>
+            <li><a href="#Schedule">SCHEDULE</a></li>
+            <li><a href="#Testimonials">TESTIMONIALS</a></li>
+            <li><a href="#Contact">CONTACT</a></li>
+          </ul>
+        </div>
+        <div class="location">
+          <h2>OUR LOCATION</h2>
+          <p>
+            Unit #103 - 2636 Montrose Ave. <br />
+            Abbotsford, BC <br />
+            V2S 3T6
+          </p>
+          <div class="advertisement">
+            <p>Baking.artistry@gmail.com</p>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+          </div>
         </div>
       </div>
     </footer>
-
-    <!--       <div class="contact-us container">
-        <h2>CONTACT US</h2>
-        
-      </div>
-      <form action="" class="container">
-        <div class="name-email">
-          <div>
-            <h3>YOUR NAME</h3>
-            <input type="text" />
-          </div>
-          <div>
-            <h3>YOUR EMAIL</h3>
-            <input type="text" />
-          </div>
-        </div>
-        <h3>PHONE</h3>
-        <input type="number" />
-        <h3>MESSAGE</h3>
-        <textarea name="" id=""></textarea>
-      </form> -->
   </body>
 </html>
