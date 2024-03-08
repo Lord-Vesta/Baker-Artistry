@@ -68,7 +68,7 @@ p {
 /* navbar */
 
 nav {
-  background-color: transparent;
+  background-color: rgb(241 249 251 / 98%);
   z-index: 9;
   width: 100vw;
 }
@@ -96,7 +96,7 @@ nav ul {
 
 nav ul li a {
   color: #2c2c2c;
-  font-size: 1vw;
+  font-size: 1.3vw;
   line-height: 1.1;
   padding-bottom: 0.8rem;
   font-family: "Open Sans", sans-serif;
@@ -126,13 +126,17 @@ nav ul li a:hover {
   /* height: 100vh; */
   /* display: flex;
   align-items: center; */
-  padding-top: 3vw;
+  /* padding-top: 3vw; */
+  padding: 6vw 0;
 }
 
 .homepage {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 0vw;
+  /* height: ; */
+  /* background-color: #d9deda; */
 }
 
 .homepage-registration {
@@ -141,6 +145,7 @@ nav ul li a:hover {
   display: flex;
   flex-direction: column;
   gap: 3vw;
+  /* align-items: center; */
 }
 
 .homepage h2 {
@@ -149,6 +154,7 @@ nav ul li a:hover {
   font-weight: 600;
   letter-spacing: 5px;
   line-height: 4vw;
+  /* text-align: center; */
 }
 
 .homepage-p {
@@ -159,6 +165,8 @@ nav ul li a:hover {
   width: 30vw;
   margin: 0;
   margin-top: 14px;
+  /* text-align: center; */
+  /* font-size: 0.5rem; */
 }
 
 .homepage button {
@@ -213,19 +221,24 @@ nav ul li a:hover {
 }
 
 .home-img {
-  width: 36vw;
+  height: 80vh;
+  /* width: 60%; */
+  border-radius: 0 6rem;
 }
 
 /* about */
 
 #About-chef {
-  padding: 10vw 0;
+  padding: 6vw 0;
 }
 
 .About-flex {
   display: flex;
+  /* flex-direction: column; */
   justify-content: space-between;
-  gap: 5vw;
+  align-items: center;
+  gap: 10vw;
+  position: relative;
 }
 
 .about-information h3 {
@@ -234,8 +247,30 @@ nav ul li a:hover {
   font-weight: 700;
 }
 
+.about-information h2 {
+  text-align: center;
+}
+
+.about-information p {
+  text-align: center;
+}
+
 .chef-img {
-  width: 40vw;
+  width: 20vw;
+  height: 50vh;
+  object-fit: cover;
+
+  border-radius: 20%;
+}
+
+.flowers-img {
+  border: 8px solid white;
+  position: absolute;
+  top: -4rem;
+  left: 12rem;
+  width: 12vw;
+  height: 30vh;
+  border-radius: 20%;
 }
 
 /* feature */
@@ -244,9 +279,44 @@ nav ul li a:hover {
   padding: 6vw 0;
 }
 
-.feature-1 {
-  background-color: #090927;
-  color: white;
+#Feature h2 {
+  text-align: center;
+}
+
+.values-cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 4vw;
+}
+
+.values-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2vw;
+  background-color: rgb(241 249 251 / 98%);
+  padding: 2rem;
+  border-radius: 20px;
+}
+
+.values-card p {
+  text-align: center;
+  width: 20vw;
+  margin: 0;
+}
+
+.values-card h3 {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 8 00;
+}
+
+.values-card img {
+  width: 20vw;
+  height: 20vw;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .feature {
@@ -266,7 +336,11 @@ nav ul li a:hover {
 /* guest */
 
 #Guests {
-  padding-bottom: 10vw;
+  padding: 6vw 0;
+}
+
+#Guests h2 {
+  text-align: center;
 }
 
 .guest1 {
@@ -303,51 +377,105 @@ nav ul li a:hover {
   width: 40vw;
 }
 
+.guest-social-media {
+  display: flex;
+  gap: 2vw;
+}
+
 /* schedule */
 
 #Schedule {
-  padding-bottom: 10vw;
+  padding: 6vw 0;
 }
 
-#schedule-1 {
-  margin-top: 8vw;
+.schedule-h2 {
+  margin-bottom: 4vw;
+}
+
+.schedule-dates {
+  display: flex;
+  align-items: center;
+  /* justify-content: space; */
+  gap: 4vw;
+  margin-top: 0.5rem;
 }
 
 .schedule-1 {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   gap: 8vw;
-  margin-top: 4vw;
+  margin: 2vw 0;
+  justify-content: center;
+}
+
+.para-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 1vw;
 }
 
 .schedule-1 img {
-  height: 80vh;
-  width: 60vw;
+  /* height: 20vh; */
+  height: 36vh;
+  width: 50vw;
+  object-fit: cover;
+  border-radius: 20px;
+  /* width: 30vw; */
+  /* border-radius: 40%; */
 }
 
-.schedule-information span {
-  font-size: 3vw;
-  letter-spacing: 0.1vw;
+.schedule-1 img:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-.schedule-information ul {
-  margin-top: 1vw;
+.date-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
 }
 
-.schedule-information li {
-  font-size: 1.5vw;
-  font-weight: 400;
-  list-style: decimal;
-  margin-bottom: 0.5vw;
-  font-family: "Open Sans", sans-serif;
+.para-button p {
+  margin: 0;
+}
+
+.schedule-1 button {
+  background-color: transparent;
+  border: 2px solid orange;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  color: orange;
+  cursor: pointer;
+  /* padding: 1vw;
+  background-color: rgb(19, 19, 204);
+  border: none;
+  color: white;
+  border-radius: 8px;
+  width: 10vw; */
+  cursor: pointer;
+}
+
+/* .schedule-1 button:hover {
+  background-color: rgb(13, 13, 82);
+} */
+
+.schedule-information {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1vw;
+  margin-bottom: 2rem;
 }
 
 /* testimonials */
 
 #Testimonials {
   background-color: rgb(241 249 251 / 98%);
-  padding-bottom: 10vw;
-  padding-top: 1vw;
+  padding-bottom: 3vw;
+  /* padding-top: 1vw; */
+  margin: 6vw 0;
 }
 
 .testimonial {
@@ -390,7 +518,7 @@ nav ul li a:hover {
   background-color: white;
   padding: 2vw;
   gap: 4vw;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
 .Testimonial-card:hover {
@@ -409,8 +537,10 @@ nav ul li a:hover {
 }
 /* contact */
 #Contact {
-  padding-bottom: 10vw;
-  padding-top: 1vw;
+  /* padding-bottom: 10vw; */
+  /* padding-top: 1vw; */
+  /* padding: 6vw 0; */
+  padding-bottom: 6vw;
 }
 
 .contact-us {
@@ -552,8 +682,13 @@ footer ul li a:hover {
 .fa-brands {
   color: black;
   font-size: 2vw;
-  margin-inline: 1vw;
+  /* margin-inline: 1vw; */
   margin-top: 1vw;
+}
+
+.faa-brands {
+  display: flex;
+  gap: 2vw;
 }
 
 .fa-brands:hover {
